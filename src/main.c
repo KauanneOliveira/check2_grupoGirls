@@ -9,11 +9,18 @@ void calcular_derivada() {
     printf("Digite o coeficiente de a ao quadrado (a): ");
     scanf("%f", &a);
 
-    printf("Digite o coeficiente de b...\n");
+    printf("Digite o coeficiente de b: ");
     scanf("%f", &b);
 
-    printf("Digite o coeficiente de c...\n");
+    printf("Digite o coeficiente de c: ");
     scanf("%f", &c);
+
+    float derivada_a = 2 * a;
+    float derivada_b = b;
+
+    printf("\n ---- Resultado ----\n");
+    printf("Funcao original:    f(x) = %.2fx^2 + %.2fx + %.2f\n", a, b, c);
+    printf("Derivada:           f'(x) = %.2fx + %.2f\n", derivada_a, derivada_b);
 }
 
 int main() {
@@ -24,7 +31,7 @@ int main() {
     printf ("Pronto! Digite sua segunda nota: ");
     scanf("%f", &nota_2);
 
-    media = nota_1 + nota_2 / 2; 
+    media = nota_1 + nota_2 / 2;
 
     return 0;
 }

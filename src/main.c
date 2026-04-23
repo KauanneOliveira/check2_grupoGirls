@@ -52,6 +52,12 @@ int main() {
         situacao = 0;
     }
 
+    if (situacao == 1){
+        printf("Média do Aluno: %f \n Situação: Aprovado!", media);
+    } else {
+        printf("Média do Aluno: %f \n Situação: Reprovado!", media);
+    }
+
     calcular_derivada();
 
     return 0;

@@ -24,6 +24,12 @@ void calcular_derivada() {
 }
 
 int main() {
+    printf("==============================");
+    printf("SISTEMA EQUIPE XYZ");
+    printf("==============================");
+
+    
+
     float nota_1, nota_2, media;
     printf("--- O aplicativo só aceita duas notas por vez ---\n");
     printf ("Digite sua primeira nota: ");

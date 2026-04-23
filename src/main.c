@@ -1,7 +1,4 @@
-#include<stdio.h>
-
 #include <stdio.h>
-#include <math.h>
 
 void calcular_derivada() {
     float a, b, c;

@@ -32,7 +32,7 @@ int main() {
     printf("3 - Verificar situacao");
     printf("4 - Exibir resultado");
     printf("5 - Calcular derivada");
-    
+    printf("6 - Sair ");
 
     float nota_1, nota_2, media;
     printf("--- O aplicativo só aceita duas notas por vez ---\n");

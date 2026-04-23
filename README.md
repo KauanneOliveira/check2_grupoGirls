@@ -16,3 +16,13 @@ Grupo de 5 integrantes
 - `src/main.c` → arquivo principal do sistema
 
   commit "leitura e armazenamento da primeira nota" foi feito por manuela cespede
+
+## Integrantes
+
+| RM    | Nomes    |
+|-------|----------|
+|574191 | Kauanne  |
+|568973 | Ligia    |
+|573225 | Manuela  |
+|574166 | Matheus  |
+|571416 | Nayhely  |

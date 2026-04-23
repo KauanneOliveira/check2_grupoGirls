@@ -9,7 +9,7 @@ int main() {
     printf("Digite a segunda nota: ");
     scanf("%f", &nota2); // faltava "&"
 
-    media = nota1 + nota2 / 2; 
+    media = (nota1 + nota2) / 2; // Para o funcionamento coreto da fórmula falta o () entre a nota1 e nota2
 
     if (media = 6) {
         printf("Aluno aprovado\n");

@@ -14,3 +14,5 @@ Grupo de 5 integrantes
 ## Estrutura
 - `src/codigo_com_erros.c` → arquivo com erros para correção
 - `src/main.c` → arquivo principal do sistema
+
+  commit "leitura e armazenamento da primeira nota" foi feito por manuela cespede

@@ -33,5 +33,7 @@ int main() {
 
     media = nota_1 + nota_2 / 2;
 
+    calcular_derivada();
+
     return 0;
 }

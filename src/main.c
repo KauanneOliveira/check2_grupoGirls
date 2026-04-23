@@ -23,42 +23,66 @@ void calcular_derivada() {
     printf("Derivada:           f'(x) = %.2fx + %.2f\n", derivada_a, derivada_b);
 }
 
+
 int main() {
-    printf("==============================");
-    printf("SISTEMA EQUIPE XYZ");
-    printf("==============================");
-    printf("1 - Inserir notas");
-    printf("2 - Calcular media");
-    printf("3 - Verificar situacao");
-    printf("4 - Exibir resultado");
-    printf("5 - Calcular derivada");
-    printf("6 - Sair ");
-
+    int opcao = 0;
     float nota_1, nota_2, media;
-    printf("--- O aplicativo só aceita duas notas por vez ---\n");
-    printf ("Digite sua primeira nota: ");
-    scanf("%f", &nota_1);
-    printf ("Pronto! Digite sua segunda nota: ");
-    scanf("%f", &nota_2);
 
-    media = nota_1 + nota_2 / 2;
+    while(opcao != 6)
+    {
+        printf("\n\n");
+        printf("==============================\n");
+        printf("SISTEMA EQUIPE XYZ\n");
+        printf("==============================\n");
+        printf("1 - Inserir notas\n");
+        printf("2 - Calcular media\n");
+        printf("3 - Verificar situacao\n");
+        printf("4 - Exibir resultado\n");
+        printf("5 - Calcular derivada\n");
+        printf("6 - Sair\n");
+        
+        printf("Digite a sua escolha: ");
+        scanf("%d", &opcao);
 
-    int situacao;
-    if(media >= 6) {
-        printf("Aluno Aprovado!");
-        situacao = 1;
-    } else {
-        printf("Aluno Reprovado!");
-        situacao = 0;
+        switch (opcao)
+        {
+        case 1:
+            printf("-- O aplicativo so aceita duas notas por vez ---\n");
+            printf ("Digite sua primeira nota: ");
+            scanf("%f", &nota_1);
+            printf ("Pronto! Digite sua segunda nota: ");
+            scanf("%f", &nota_2);
+            break;
+        case 2: 
+            media = (nota_1 + nota_2) / 2;
+            printf("Media do Aluno: %f", media);
+            break;
+        case 3:
+            int situacao;
+            if(media >= 6) {
+                printf("Aluno Aprovado!");
+                situacao = 1;
+            } else {
+                printf("Aluno Reprovado!");
+                situacao = 0;
+            }
+            printf("\n");
+            break;
+        case 4:
+            if (situacao == 1){
+                printf("Media do Aluno: %f \n Situacao: Aprovado!", media);
+            } else {
+                printf("Media do Aluno: %f \n Situação: Reprovado!", media);
+            }
+            printf("\n");
+            break;
+        case 5:
+            calcular_derivada();
+        case 6:
+            break;
+        default:
+            printf("Digite a opcao correta!");
+        }       
     }
-
-    if (situacao == 1){
-        printf("Média do Aluno: %f \n Situação: Aprovado!", media);
-    } else {
-        printf("Média do Aluno: %f \n Situação: Reprovado!", media);
-    }
-
-    calcular_derivada();
-
     return 0;
 }

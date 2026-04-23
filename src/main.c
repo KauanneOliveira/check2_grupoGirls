@@ -1,5 +1,21 @@
 #include<stdio.h>
 
+#include <stdio.h>
+#include <math.h>
+
+void calcular_derivada() {
+    float a, b, c;
+
+    printf("Digite o coeficiente de a ao quadrado (a): ");
+    scanf("%f", &a);
+
+    printf("Digite o coeficiente de b...\n");
+    scanf("%f", &b);
+
+    printf("Digite o coeficiente de c...\n");
+    scanf("%f", &c);
+}
+
 int main() {
     float nota_1, nota_2, media;
     printf("--- O aplicativo só aceita duas notas por vez ---\n");

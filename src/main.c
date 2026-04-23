@@ -27,7 +27,11 @@ int main() {
     printf("==============================");
     printf("SISTEMA EQUIPE XYZ");
     printf("==============================");
-
+    printf("1 - Inserir notas");
+    printf("2 - Calcular media");
+    printf("3 - Verificar situacao");
+    printf("4 - Exibir resultado");
+    printf("5 - Calcular derivada");
     
 
     float nota_1, nota_2, media;

@@ -43,6 +43,15 @@ int main() {
 
     media = nota_1 + nota_2 / 2;
 
+    int situacao;
+    if(media >= 6) {
+        printf("Aluno Aprovado!");
+        situacao = 1;
+    } else {
+        printf("Aluno Reprovado!");
+        situacao = 0;
+    }
+
     calcular_derivada();
 
     return 0;
